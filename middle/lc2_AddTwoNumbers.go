@@ -1,7 +1,3 @@
-package main
-
-import "fmt"
-
 /*
 @ Problem: Leetcode 2. Add Two Numbers
 @ Solution: 模拟
@@ -46,20 +42,4 @@ import "fmt"
             curList.Next = &ListNode{Val: carry}
         }
         return VirList.Next
-}
-
-func main() {
-	l1 := &ListNode{Val: 2}
-	l1.Next = &ListNode{Val: 4}
-	l1.Next.Next = &ListNode{Val: 3}
-
-	l2 := &ListNode{Val: 5}
-	l2.Next = &ListNode{Val: 6}
-	l2.Next.Next = &ListNode{Val: 4}
-
-	result := addTwoNumbers(l1, l2)
-	for result != nil {
-		fmt.Println(result.Val)
-		result = result.Next
-	}
 }
