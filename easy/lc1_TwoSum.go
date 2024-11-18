@@ -1,6 +1,3 @@
-package main
-
-import "fmt"
 
 /*
 @ Problem: Leetcode 1. Two Sum
@@ -12,7 +9,6 @@ import "fmt"
     如果不在，将num存入哈希表中。
 */
 
-
 func twoSum(nums []int, target int) []int {
     hashMap := make(map[int]int)
     for i, num := range nums {
@@ -22,11 +18,4 @@ func twoSum(nums []int, target int) []int {
         hashMap[num] = i
     }
     return nil
-}
-
-func main() {
-    nums := []int{2, 7, 11, 15}
-    target := 9
-    result := twoSum(nums, target)
-    fmt.Println(result)
 }
